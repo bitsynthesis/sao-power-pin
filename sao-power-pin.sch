@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3V0 #PWR0101
+U 1 1 5D51FA27
+P 1350 1850
+F 0 "#PWR0101" H 1350 1700 50  0001 C CNN
+F 1 "+3V0" H 1365 2023 50  0000 C CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D51FC93
+P 4050 3300
+F 0 "#PWR0102" H 4050 3050 50  0001 C CNN
+F 1 "GND" H 4055 3127 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED1
+U 1 1 5D521C17
+P 3400 2800
+F 0 "LED1" V 3439 2683 50  0000 R CNN
+F 1 "LED" V 3348 2683 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3400 2800 50  0001 C CNN
+F 3 "~" H 3400 2800 50  0001 C CNN
+	1    3400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even JV1
+U 1 1 5D523FC9
+P 4150 2600
+F 0 "JV1" V 4154 2780 50  0000 L CNN
+F 1 "Conn_02x03_Odd_Even" V 4245 2780 50  0000 L CNN
+F 2 "BBS Components:Pin_Header_Straight_2x03_Pitch2.54mm" H 4150 2600 50  0001 C CNN
+F 3 "~" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2200 4050 2400
+Wire Wire Line
+	1350 2800 1350 3100
+Wire Wire Line
+	3400 2950 3400 3100
+Connection ~ 3400 3100
+Wire Wire Line
+	2550 2200 2750 2200
+$Comp
+L Device:R_Small R1
+U 1 1 5D530DE8
+P 3400 2450
+F 0 "R1" H 3459 2496 50  0000 L CNN
+F 1 "R_Small" H 3459 2405 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3400 2450 50  0001 C CNN
+F 3 "~" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2350 3400 2200
+Connection ~ 3400 2200
+Wire Wire Line
+	3400 2550 3400 2650
+Wire Wire Line
+	3400 2200 4050 2200
+Wire Wire Line
+	4050 2900 4050 3100
+Wire Wire Line
+	3400 3100 4050 3100
+Connection ~ 4050 3100
+Wire Wire Line
+	4050 3100 4050 3300
+$Comp
+L Device:C C1
+U 1 1 5D5368BF
+P 2750 2650
+F 0 "C1" H 2865 2696 50  0000 L CNN
+F 1 "C" H 2865 2605 50  0000 L CNN
+F 2 "BBS Components:C_0603_HandSoldering" H 2788 2500 50  0001 C CNN
+F 3 "~" H 2750 2650 50  0001 C CNN
+	1    2750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2500 2750 2200
+Connection ~ 2750 2200
+Wire Wire Line
+	2750 2200 3400 2200
+Wire Wire Line
+	2750 2800 2750 3100
+Connection ~ 2750 3100
+Wire Wire Line
+	2750 3100 3400 3100
+Text Label 2550 2200 0    50   ~ 0
++V
+$Comp
+L Device:Battery_Cell BATTERY1
+U 1 1 5D51E8B4
+P 1350 2700
+F 0 "BATTERY1" H 1468 2796 50  0000 L CNN
+F 1 "Battery_Cell" H 1468 2705 50  0000 L CNN
+F 2 "BBS Components:BatteryHolder12_5mm_cell_Harwin_S8201-46R_NoSilk" V 1350 2760 50  0001 C CNN
+F 3 "~" V 1350 2760 50  0001 C CNN
+	1    1350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1850 1350 2100
+Wire Wire Line
+	2150 2300 2000 2300
+Wire Wire Line
+	2000 2300 2000 3100
+Wire Wire Line
+	2000 3100 2750 3100
+Wire Wire Line
+	1350 3100 2000 3100
+Connection ~ 2000 3100
+Wire Wire Line
+	2150 2100 1350 2100
+Connection ~ 1350 2100
+Wire Wire Line
+	1350 2100 1350 2500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even JH1
+U 1 1 5D55ACD6
+P 4750 2600
+F 0 "JH1" V 4754 2780 50  0000 L CNN
+F 1 "Conn_02x03_Odd_Even" V 4845 2780 50  0000 L CNN
+F 2 "BBS Components:Pin_Header_Straight_2x03_Pitch2.54mm" H 4750 2600 50  0001 C CNN
+F 3 "~" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2200 4650 2200
+Wire Wire Line
+	4650 2200 4650 2400
+Connection ~ 4050 2200
+Wire Wire Line
+	4650 2900 4650 3100
+Wire Wire Line
+	4650 3100 4050 3100
+$Comp
+L Switch:SW_SPDT POW1
+U 1 1 5D52009C
+P 2350 2200
+F 0 "POW1" H 2350 1875 50  0000 C CNN
+F 1 "SW_SPST" H 2350 1966 50  0000 C CNN
+F 2 "BBS Components:SPDT_LowProfile_SMD_Switch_PCM12SMTR_NoSilk" H 2350 2200 50  0001 C CNN
+F 3 "~" H 2350 2200 50  0001 C CNN
+	1    2350 2200
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
